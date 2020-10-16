@@ -36,8 +36,8 @@ class Grafo:
 		"""
 		vertice: vertice a ser eexplorado
 		visitados: Dicionário que mapeia, cada vertice explorado. 
-				Se visitados[vertice]==1: o vértice ainda sendo explorado
-				Se visitados[vertice]==2: o vértice já foi explorado totalmente
+				Se visitados[vertice]==1: o vértice ainda sendo explorado ou foi encontrado um ciclo neste vertice explorado
+				Se visitados[vertice]==2: o vértice já foi explorado totalmente e não foi encontrado ciclo durante a exploração
 		"""
 		pass
 
@@ -49,6 +49,6 @@ class Grafo:
 
 		return True
 
-	def ordenacao_topologica(self) -> List[Vertice]:
+	def ordenacao_topologica(self) -> List:
 		pass
 
